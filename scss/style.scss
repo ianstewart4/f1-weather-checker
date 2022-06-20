@@ -1,0 +1,78 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$primary-color: #dd8989;
+$secondary-color: #ff9800;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    background: $primary-color;
+}
+
+.main {
+    margin: 20px 20px;
+
+    h1 {
+        font-family: $font-stack;
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-family: $font-stack;
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    select {
+        border-radius: 3px;
+        font-family: $font-stack;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    input {
+        border-radius: 3px;
+        font-family: $font-stack;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        max-width: 1600px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin-right: 20px;
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background: $primary-color;
+            -webkit-box-shadow: 12px 12px 24px #bc7474, -12px -12px 24px #fe9e9e;
+            box-shadow: 12px 12px 24px #bc7474, -12px -12px 24px #fe9e9e;
+        }
+    }
+}

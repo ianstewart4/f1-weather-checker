@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather Checker</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Get the race weekend weather for your favourite F1 track</h1>
+        <!-- dropdown menu -->
+        <form action="#">
+            <label for="track">Track: </label>
+            <select name="track" id="track" onchange="this.form.submit();">
+                <option value="">Select a race</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Australia">Australia</option>
+                <option value="Italy">Italy</option>
+                <option value="Miami">Miami</option>
+                <option value="Spain">Spain</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Canada">Canada</option>
+                <option value="Great Britain">Great Britain</option>
+                <option value="Austria">Austria</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Monza">Monza</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Japan">Japan</option>
+                <option value="Austin">Austin</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+            </select>
+        </form>
+
+    </div>
+    <div class="forecast">
+        <h2>Forecast</h2>
+        <div class="container">
+            <div class="weather1">
+                <h3>Thursday</h3>
+            </div>
+            <div class="weather2">
+                <h3>Friday</h3>
+            </div>
+            <div class="weather3">
+                <h3>Saturday</h3>
+            </div>
+            <div class="weather4">
+                <h3>Sunday</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
